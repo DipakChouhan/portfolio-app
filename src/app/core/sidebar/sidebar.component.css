@@ -1,0 +1,61 @@
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 250px;
+  background-color: rgb(4, 51, 35);
+  position: fixed;
+  top:0;
+  left:0;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.sidebar a.active {
+  /*background-color: #4CAF50 !important;*/
+  color: chartreuse !important;
+  font-weight: bold;
+  /*border-left: 2px solid white !important;*/
+}
+
+.sidebar a:hover:not(.active) {
+  color: chartreuse !important;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {display: none}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+.profile-pic {
+  border: 1px solid lightgrey;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 80px;
+  width: 80px;
+  background-color: white;
+}

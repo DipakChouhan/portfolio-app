@@ -1,0 +1,14 @@
+div.app-content{
+  margin-left: 250px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  /*.sidebar a {display: none}*/
+  div.app-content {margin-left: 0; margin-bottom: 55px;}
+}

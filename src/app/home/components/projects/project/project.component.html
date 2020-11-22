@@ -1,0 +1,24 @@
+<div class="card ml-2 mr-2">
+    <div class="card-header">
+      <div class="font-weight-bold">{{ project.name }}</div>
+      <small class="">21/20/2020 - 22/08/2020 | Hyderabad, India</small>
+    </div>
+    <div class="card-body">
+      <div>Project Description</div>
+      <small>{{ project.description }} implementd using thsi and this technology stack. Please becareful while installing</small>
+
+      <div class="mt-2">Features</div>
+      <small *ngFor="let rolesAndres of project.rolesAndRes">
+        <li class="ml-4">{{ rolesAndres }}</li>
+      </small>
+
+<!--      <div class="mt-2">Tools & Technology Used</div>-->
+<!--      <small *ngFor="let tool of ['Java 8', 'Hibernate', 'Spring', 'Spring Boot', 'REST Services', 'Angular 8', 'GitLab']">-->
+<!--        <div>-->
+<!--          <img src="favicon.ico"> {{ tool }}-->
+<!--        </div>-->
+<!--      </small>-->
+    </div>
+<!--    <div class="card-footer">Footer</div>-->
+</div>
+<br>
